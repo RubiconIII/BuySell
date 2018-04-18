@@ -7,10 +7,10 @@ public class mysqlDataLayer {
                                String UserPassword, String UserPhoneNumber, String UserDateOfBirth,
                                String UserSinceDate, Connection con) throws SQLException {
         int UserID = 0;
-        Statement logIn = con.createStatement();
+        Statement reg = con.createStatement();
+        int executeUpdate = reg.executeUpdate("INSERT INTO User (UserID, UserEmail, UserFullName, UserDisplayName, UserPassword, UserPhoneNumber, UserDateOfBirth, UserSinceDate) VALUES (default, \"" + UserEmail + "\",\"" + UserFullName + "\" ,\"" + UserDisplayName + "\",\"" + UserPassword + "\",\"" + UserPhoneNumber + "\",\"" + UserDateOfBirth + "\",\"" + UserSinceDate + "\");");
 
-        ResultSet rs = logIn.executeQuery("SELECT UserID FROM User WHERE UserEmail = \""
-                + UserEmail + "\" AND UserPassword = \"" + UserPassword + "\";");
+        UserID = logIn(UserEmail, UserPassword, con);
         return UserID;
     }
 
@@ -72,11 +72,61 @@ public class mysqlDataLayer {
         return isSeller;
     }
 
-    public static ResultSet searchItem(String ItemName, String ItemPrice, int LocationID, Connection con) throws SQLException {
-    Statement sit = con.createStatement();
-    ResultSet rs = sit.executeQuery("SELECT ItemID, ItemName, ItemPrice, ItemCondition, ItemDatePosted FROM Item, Location WHERE ItemName LIKE \"" + ItemName + "\"  AND ItemPrice <= \"" + ItemPrice + "\"  AND LocationID = \"" + LocationID + "\";");
+    public static ResultSet viewItem (int ItemID, Connection con) throws SQLException {
+        Statement vi = con.createStatement();
+        ResultSet rs = vi.executeQuery("SELECT ItemName, ItemPrice, ItemCondition, ItemDatePosted, ItemBrand, ItemDescription, UserDisplayName, SellerRatingAverage, LocationCity, LocationState, LocationZipCode, LocationAddress FROM Item, User, Seller, Location WHERE ItemID = \"" + ItemID + "\" AND UserID = fkSellerID AND SellerID = fkSellerID AND fkLocationID = LocationID;");
 
-    return rs;
+        return rs;
+    }
+
+    public static ResultSet viewComputer (int ItemID, Connection con) throws SQLException {
+        Statement vc = con.createStatement();
+        ResultSet rs = vc.executeQuery("SELECT ComputerGeneration, ComputerProcessor, ComputerStorageSpace FROM Computer WHERE ComputerID = \"" + ItemID + "\";");
+
+        return rs;
+    }
+
+    public static ResultSet viewBook (int ItemID, Connection con) throws SQLException {
+        Statement vb = con.createStatement();
+        ResultSet rs = vb.executeQuery("SELECT BookAuthor, BookEdition FROM Book WHERE BookID = \"" + ItemID + "\";");
+
+        return rs;
+    }
+    public static ResultSet viewClothing (int ItemID, Connection con) throws SQLException {
+        Statement vcl = con.createStatement();
+        ResultSet rs = vcl.executeQuery("SELECT ClothingGender, ClothingSize, ClothingColor FROM Clothing WHERE ClothingID = \"" + ItemID + "\";");
+
+        return rs;
+    }
+
+    public static boolean testBuyer(int UserID, Connection con) throws SQLException {
+        boolean isBuyer = false;
+        int BuyerID = 0;
+
+        Statement testS = con.createStatement();
+        ResultSet rs = testS.executeQuery("SELECT BuyerID FROM Seller WHERE BuyerID = \"" + UserID + "\";");
+        while (rs.next()) {
+            BuyerID = rs.getInt(1);
+        }
+        if (BuyerID != 0) {
+            isBuyer = true;
+        }
+        return isBuyer;
+    }
+
+
+    public static ResultSet searchItem(String ItemName, String ItemPrice, int LocationID, Connection con) throws SQLException {
+        Statement sit = con.createStatement();
+        ResultSet rs = sit.executeQuery("SELECT ItemID, ItemName, ItemPrice, ItemCondition, ItemDatePosted FROM Item, Location WHERE ItemName LIKE \"" + ItemName + "\"  AND ItemPrice <= \"" + ItemPrice + "\"  AND LocationID = \"" + LocationID + "\";");
+
+        return rs;
+    }
+
+    public static ResultSet viewUser(String UserDisplayName, Connection con) throws SQLException {
+        Statement vu = con.createStatement();
+        ResultSet rs = vu.executeQuery("SELECT UserDisplayName, UserEmail, UserPhoneNumber, UserDateOfBirth, UserSinceDate, UserID FROM User WHERE UserDisplayName = \"" + UserDisplayName + "\";");
+
+        return rs;
     }
 
     public static int getSchoolID(int UserID, Connection con) throws SQLException {
@@ -91,6 +141,42 @@ public class mysqlDataLayer {
         return SchoolID;
     }
 
+    public static int getSellerRatingAverage(int UserID, Connection con) throws SQLException {
+        int SellerRatingAverage = 0;
+
+        Statement gsra = con.createStatement();
+        ResultSet rs = gsra.executeQuery("SELECT SellerRatingAverage FROM Seller WHERE SellerID = \"" + UserID + "\";");
+
+        while (rs.next()) {
+            SellerRatingAverage = rs.getInt(1);
+        }
+        return SellerRatingAverage;
+    }
+
+    public static int getBuyerRatingAverage(int UserID, Connection con) throws SQLException {
+        int BuyerRatingAverage = 0;
+
+        Statement gsra = con.createStatement();
+        ResultSet rs = gsra.executeQuery("SELECT BuyerRatingAverage FROM Buyer WHERE BuyerID = \"" + UserID + "\";");
+
+        while (rs.next()) {
+            BuyerRatingAverage = rs.getInt(1);
+        }
+        return BuyerRatingAverage;
+    }
+
+    public static String getSchoolName(int SchoolID, Connection con) throws SQLException {
+        String SchoolName = "";
+
+        Statement gsid = con.createStatement();
+        ResultSet rs = gsid.executeQuery("SELECT SchoolName FROM School WHERE SchoolID = \"" + SchoolID + "\";");
+
+        while (rs.next()) {
+            SchoolName = rs.getString(1);
+        }
+        return SchoolName;
+    }
+
     public static int getSchoolLocationID(int SchoolID, Connection con) throws SQLException {
         int LocationID = 0;
         Statement gslid = con.createStatement();
@@ -100,25 +186,6 @@ public class mysqlDataLayer {
             LocationID = rs.getInt(1);
         }
         return LocationID;
-    }
-
-    public static int createLocation(String LocationCity, String LocationState, String LocationZipCode, String LocationAddress, Connection con) throws SQLException {
-        int LocationID = 0;
-        Statement cl = con.createStatement();
-        int executeUpdate = cl.executeUpdate("INSERT INTO Location (LocationID, LocationCity, LocationState, LocationZipcode, LocationAddress) VALUES (default, \"" + LocationCity + "\",\"" + LocationState + "\" ,\"" + LocationZipCode + "\",\"" + LocationAddress + "\");");
-
-        LocationID = getLocationID(LocationCity, LocationState, LocationZipCode, LocationAddress, con);
-        return LocationID;
-    }
-
-    public static void createSeller(int UserID, int SellerRatingAverage, Connection con) throws SQLException {
-        Statement cs = con.createStatement();
-        int executeUpdate = cs.executeUpdate("INSERT INTO Seller (SellerID, SellerRatingAverage) VALUES (\"" + UserID + "\", \"" + SellerRatingAverage + "\");");
-    }
-
-    public static void createSchool(int LocationID, String SchoolName, String SchoolAbbreviation, Connection con) throws SQLException {
-        Statement csl = con.createStatement();
-        int executeUpdate = csl.executeUpdate("INSERT INTO School (SchoolID, fkLocationID, SchoolName, SchoolAbbreviation) VALUES (default, \"" + LocationID + "\", \"" + SchoolName + "\", \"" + SchoolAbbreviation + "\");");
     }
 
     public static int getLocationID(String LocationCity, String LocationState, String LocationZipCode, String LocationAddress, Connection con) throws SQLException {
@@ -166,5 +233,29 @@ public class mysqlDataLayer {
         Statement ccl = con.createStatement();
         int executeUpdate = ccl.executeUpdate("INSERT INTO Clothing (ClothingID, ClothingGender, ClothingColor, ClothingSize) VALUES (\"" + ItemID + "\", \"" + ClothingGender + "\", \"" + ClothingColor + "\", + \"" + ClothingSize + "\");");
 
+    }
+
+    public static void createBuyer(int UserID, int BuyerRatingAverage, Connection con) throws SQLException {
+        Statement cs = con.createStatement();
+        int executeUpdate = cs.executeUpdate("INSERT INTO Buyer (BuyerID, BuyerRatingAverage) VALUES (\"" + UserID + "\", \"" + BuyerRatingAverage + "\");");
+    }
+
+    public static void createSchool(int LocationID, String SchoolName, String SchoolAbbreviation, Connection con) throws SQLException {
+        Statement csl = con.createStatement();
+        int executeUpdate = csl.executeUpdate("INSERT INTO School (SchoolID, fkLocationID, SchoolName, SchoolAbbreviation) VALUES (default, \"" + LocationID + "\", \"" + SchoolName + "\", \"" + SchoolAbbreviation + "\");");
+    }
+
+    public static void createSeller(int UserID, int SellerRatingAverage, Connection con) throws SQLException {
+        Statement cs = con.createStatement();
+        int executeUpdate = cs.executeUpdate("INSERT INTO Seller (SellerID, SellerRatingAverage) VALUES (\"" + UserID + "\", \"" + SellerRatingAverage + "\");");
+    }
+
+    public static int createLocation(String LocationCity, String LocationState, String LocationZipCode, String LocationAddress, Connection con) throws SQLException {
+        int LocationID = 0;
+        Statement cl = con.createStatement();
+        int executeUpdate = cl.executeUpdate("INSERT INTO Location (LocationID, LocationCity, LocationState, LocationZipcode, LocationAddress) VALUES (default, \"" + LocationCity + "\",\"" + LocationState + "\" ,\"" + LocationZipCode + "\",\"" + LocationAddress + "\");");
+
+        LocationID = getLocationID(LocationCity, LocationState, LocationZipCode, LocationAddress, con);
+        return LocationID;
     }
 }
