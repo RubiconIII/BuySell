@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b842448-e140-41b7-aeda-304874927036" name="Default" comment="" />
+    <list default="true" id="2b842448-e140-41b7-aeda-304874927036" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/BuySell/BuySell.class" afterPath="$PROJECT_DIR$/out/production/BuySell/BuySell.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BuySell/mysqlDataLayer.class" afterPath="$PROJECT_DIR$/out/production/BuySell/mysqlDataLayer.class" />
+      <change beforePath="$PROJECT_DIR$/src/BuySell.java" afterPath="$PROJECT_DIR$/src/BuySell.java" />
+      <change beforePath="$PROJECT_DIR$/src/mysqlDataLayer.java" afterPath="$PROJECT_DIR$/src/mysqlDataLayer.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +33,8 @@
       <file leaf-file-name="BuySell.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BuySell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="60" column="54" lean-forward="true" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+            <state relative-caret-position="335">
+              <caret line="251" column="13" lean-forward="true" selection-start-line="251" selection-start-column="13" selection-end-line="251" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,23 +45,84 @@
       <file leaf-file-name="mysqlDataLayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mysqlDataLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+            <state relative-caret-position="245">
+              <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
               <folding>
-                <marker date="1523559473086" expanded="true" signature="450:573" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="827:868" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="827:926" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="827:927" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="827:949" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="827:950" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="827:974" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="827:975" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="1326:1333" ph="SELECT UserI... User" />
-                <marker date="1523559473086" expanded="true" signature="1326:1379" ph="SELECT Moder... Moderator" />
-                <marker date="1523559473086" expanded="true" signature="1326:1380" ph="SELECT Moder... Moderator" />
-                <marker date="1523559473086" expanded="true" signature="1326:1382" ph="SELECT Moder... Moderator" />
-                <marker date="1523559473086" expanded="true" signature="1326:1398" ph="SELECT Moder... Moderator" />
-                <marker date="1523559473086" expanded="true" signature="1326:1399" ph="SELECT Moder... Moderator" />
+                <marker date="1524015277922" expanded="true" signature="454:577" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="835:876" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="835:910" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="835:911" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="835:933" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="835:934" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="835:958" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="835:959" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="1315:1322" ph="SELECT UserI... User" />
+                <marker date="1524015277922" expanded="true" signature="1315:1368" ph="SELECT Moder... Moderator" />
+                <marker date="1524015277922" expanded="true" signature="1315:1369" ph="SELECT Moder... Moderator" />
+                <marker date="1524015277922" expanded="true" signature="1315:1371" ph="SELECT Moder... Moderator" />
+                <marker date="1524015277922" expanded="true" signature="1315:1387" ph="SELECT Moder... Moderator" />
+                <marker date="1524015277922" expanded="true" signature="1315:1388" ph="SELECT Moder... Moderator" />
+                <marker date="1524015277922" expanded="true" signature="1822:1888" ph="SELECT Stude... Student" />
+                <marker date="1524015277922" expanded="true" signature="2312:2359" ph="SELECT Selle... Seller" />
+                <marker date="1524015277922" expanded="true" signature="2312:2375" ph="SELECT Selle... Seller" />
+                <marker date="1524015277922" expanded="true" signature="2763:2868" ph="SELECT ItemI... Item" />
+                <marker date="1524015277922" expanded="true" signature="2763:2871" ph="SELECT ItemI... Item" />
+                <marker date="1524015277922" expanded="true" signature="2763:2910" ph="SELECT ItemI... Item" />
+                <marker date="1524015277922" expanded="true" signature="2763:2947" ph="SELECT ItemI... Item" />
+                <marker date="1524015277922" expanded="true" signature="2763:2948" ph="SELECT ItemI... Item" />
+                <marker date="1524015277922" expanded="true" signature="2763:2950" ph="SELECT ItemI... Item" />
+                <marker date="1524015277922" expanded="true" signature="2763:2970" ph="SELECT ItemI... Item" />
+                <marker date="1524015277922" expanded="true" signature="2763:2971" ph="SELECT ItemI... Item" />
+                <marker date="1524015277922" expanded="true" signature="3199:3248" ph="SELECT fkSch... Student" />
+                <marker date="1524015277922" expanded="true" signature="3199:3266" ph="SELECT fkSch... Student" />
+                <marker date="1524015277922" expanded="true" signature="3593:3642" ph="SELECT fkLoc... School" />
+                <marker date="1524015277922" expanded="true" signature="3593:3644" ph="SELECT fkLoc... School" />
+                <marker date="1524015277922" expanded="true" signature="3593:3662" ph="SELECT fkLoc... School" />
+                <marker date="1524015277922" expanded="true" signature="4065:4181" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4065:4204" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4065:4206" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4065:4231" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4065:4233" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4065:4259" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4065:4261" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4065:4287" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4065:4288" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="4634:4695" ph="INSERT INTO Seller... " />
+                <marker date="1524015277922" expanded="true" signature="4634:4715" ph="INSERT INTO Seller... " />
+                <marker date="1524015277922" expanded="true" signature="4634:4745" ph="INSERT INTO Seller... " />
+                <marker date="1524015277922" expanded="true" signature="4987:5079" ph="INSERT INTO School... " />
+                <marker date="1524015277922" expanded="true" signature="4987:5130" ph="INSERT INTO School... " />
+                <marker date="1524015277922" expanded="true" signature="4987:5159" ph="INSERT INTO School... " />
+                <marker date="1524015277922" expanded="true" signature="5454:5506" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5509" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5554" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5599" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5602" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5649" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5650" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5652" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5677" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="5454:5678" ph="SELECT Locat... Location" />
+                <marker date="1524015277922" expanded="true" signature="6130:6491" ph="SELECT ItemI... ITEM" />
+                <marker date="1524015277922" expanded="true" signature="6939:6951" ph="INSERT INTO Location... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7090" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7136" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7178" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7205" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7259" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7278" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7285" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7286" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="6939:7288" ph="INSERT INTO Item... " />
+                <marker date="1524015277922" expanded="true" signature="7718:7823" ph="INSERT INTO Computer... " />
+                <marker date="1524015277922" expanded="true" signature="7718:7843" ph="INSERT INTO Computer... " />
+                <marker date="1524015277922" expanded="true" signature="7718:7906" ph="INSERT INTO Computer... " />
+                <marker date="1524015277922" expanded="true" signature="7718:7936" ph="INSERT INTO Computer... " />
+                <marker date="1524015277922" expanded="true" signature="7718:7937" ph="INSERT INTO Computer... " />
+                <marker date="1524015277922" expanded="true" signature="8164:8291" ph="INSERT INTO Book... " />
+                <marker date="1524015277922" expanded="true" signature="8551:8717" ph="INSERT INTO Clothing... " />
+                <marker date="1524015277922" expanded="true" signature="8551:8736" ph="INSERT INTO Book... " />
+                <marker date="1524015277922" expanded="true" signature="8551:8740" ph="INSERT INTO Clothing... " />
               </folding>
             </state>
           </provider>
@@ -73,7 +140,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>userfull</find>
+      <find>error</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -94,7 +165,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="151" />
     <option name="width" value="1400" />
     <option name="height" value="980" />
@@ -114,10 +185,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,6 +208,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -151,7 +222,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CSC312" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -282,29 +353,33 @@
       <updated>1523407627459</updated>
       <workItem from="1523407633270" duration="7975000" />
       <workItem from="1523555660101" duration="5040000" />
+      <workItem from="1523768894162" duration="721000" />
+      <workItem from="1523842671383" duration="8360000" />
+      <workItem from="1523933815979" duration="15207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13015000" />
+    <option name="totallyTimeSpent" value="37303000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -319,6 +394,35 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -331,6 +435,288 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/BuySell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3650">
+          <caret line="146" column="49" lean-forward="true" selection-start-line="146" selection-start-column="49" selection-end-line="146" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mysqlDataLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2275">
+          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+          <folding>
+            <marker date="1524015277922" expanded="true" signature="454:577" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:876" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:910" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:911" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:933" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:934" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:958" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:959" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1322" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1368" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1369" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1371" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1387" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1388" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1822:1888" ph="SELECT Stude... Student" />
+            <marker date="1524015277922" expanded="true" signature="2312:2359" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2312:2375" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2763:2868" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2871" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2910" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2947" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2948" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2950" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2970" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2971" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="3199:3248" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3199:3266" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3593:3642" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3644" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3662" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="4065:4181" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4204" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4206" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4231" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4233" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4259" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4261" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4287" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4288" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4695" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4715" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4745" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5079" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5130" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5159" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="5454:5506" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5509" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5554" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5599" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5602" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5649" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5650" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5652" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5677" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5678" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="6130:6491" ph="SELECT ItemI... ITEM" />
+            <marker date="1524015277922" expanded="true" signature="6939:6951" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7090" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7136" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7178" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7205" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7259" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7278" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7285" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7286" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7288" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7823" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7843" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7906" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7936" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7937" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="8164:8291" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8717" ph="INSERT INTO Clothing... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8736" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8740" ph="INSERT INTO Clothing... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BuySell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mysqlDataLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding>
+            <marker date="1524015277922" expanded="true" signature="454:577" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:876" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:910" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:911" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:933" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:934" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:958" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:959" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1322" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1368" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1369" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1371" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1387" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1388" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1822:1888" ph="SELECT Stude... Student" />
+            <marker date="1524015277922" expanded="true" signature="2312:2359" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2312:2375" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2763:2868" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2871" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2910" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2947" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2948" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2950" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2970" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2971" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="3199:3248" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3199:3266" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3593:3642" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3644" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3662" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="4065:4181" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4204" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4206" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4231" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4233" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4259" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4261" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4287" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4288" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4695" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4715" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4745" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5079" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5130" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5159" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="5454:5506" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5509" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5554" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5599" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5602" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5649" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5650" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5652" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5677" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5678" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="6130:6491" ph="SELECT ItemI... ITEM" />
+            <marker date="1524015277922" expanded="true" signature="6939:6951" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7090" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7136" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7178" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7205" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7259" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7278" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7285" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7286" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7288" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7823" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7843" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7906" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7936" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7937" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="8164:8291" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8717" ph="INSERT INTO Clothing... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8736" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8740" ph="INSERT INTO Clothing... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BuySell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mysqlDataLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding>
+            <marker date="1524015277922" expanded="true" signature="454:577" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:876" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:910" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:911" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:933" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:934" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:958" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:959" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1322" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1368" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1369" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1371" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1387" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1388" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1822:1888" ph="SELECT Stude... Student" />
+            <marker date="1524015277922" expanded="true" signature="2312:2359" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2312:2375" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2763:2868" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2871" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2910" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2947" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2948" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2950" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2970" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2971" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="3199:3248" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3199:3266" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3593:3642" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3644" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3662" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="4065:4181" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4204" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4206" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4231" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4233" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4259" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4261" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4287" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4288" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4695" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4715" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4745" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5079" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5130" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5159" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="5454:5506" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5509" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5554" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5599" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5602" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5649" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5650" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5652" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5677" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5678" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="6130:6491" ph="SELECT ItemI... ITEM" />
+            <marker date="1524015277922" expanded="true" signature="6939:6951" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7090" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7136" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7178" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7205" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7259" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7278" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7285" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7286" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7288" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7823" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7843" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7906" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7936" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7937" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="8164:8291" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8717" ph="INSERT INTO Clothing... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8736" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8740" ph="INSERT INTO Clothing... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BuySell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -346,20 +732,81 @@
         <state relative-caret-position="375">
           <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <marker date="1523559473086" expanded="true" signature="450:573" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:868" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:926" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:927" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:949" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:950" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:974" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:975" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="1326:1333" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="1326:1379" ph="SELECT Moder... Moderator" />
-            <marker date="1523559473086" expanded="true" signature="1326:1380" ph="SELECT Moder... Moderator" />
-            <marker date="1523559473086" expanded="true" signature="1326:1382" ph="SELECT Moder... Moderator" />
-            <marker date="1523559473086" expanded="true" signature="1326:1398" ph="SELECT Moder... Moderator" />
-            <marker date="1523559473086" expanded="true" signature="1326:1399" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="454:577" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:876" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:910" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:911" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:933" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:934" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:958" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:959" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1322" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1368" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1369" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1371" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1387" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1388" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1822:1888" ph="SELECT Stude... Student" />
+            <marker date="1524015277922" expanded="true" signature="2312:2359" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2312:2375" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2763:2868" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2871" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2910" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2947" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2948" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2950" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2970" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2971" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="3199:3248" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3199:3266" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3593:3642" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3644" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3662" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="4065:4181" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4204" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4206" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4231" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4233" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4259" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4261" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4287" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4288" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4695" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4715" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4745" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5079" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5130" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5159" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="5454:5506" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5509" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5554" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5599" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5602" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5649" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5650" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5652" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5677" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5678" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="6130:6491" ph="SELECT ItemI... ITEM" />
+            <marker date="1524015277922" expanded="true" signature="6939:6951" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7090" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7136" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7178" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7205" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7259" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7278" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7285" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7286" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7288" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7823" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7843" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7906" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7936" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7937" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="8164:8291" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8717" ph="INSERT INTO Clothing... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8736" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8740" ph="INSERT INTO Clothing... " />
           </folding>
         </state>
       </provider>
@@ -371,33 +818,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_101/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3025">
+          <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mysqlDataLayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+        <state relative-caret-position="245">
+          <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
           <folding>
-            <marker date="1523559473086" expanded="true" signature="450:573" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:868" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:926" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:927" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:949" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:950" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:974" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="827:975" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="1326:1333" ph="SELECT UserI... User" />
-            <marker date="1523559473086" expanded="true" signature="1326:1379" ph="SELECT Moder... Moderator" />
-            <marker date="1523559473086" expanded="true" signature="1326:1380" ph="SELECT Moder... Moderator" />
-            <marker date="1523559473086" expanded="true" signature="1326:1382" ph="SELECT Moder... Moderator" />
-            <marker date="1523559473086" expanded="true" signature="1326:1398" ph="SELECT Moder... Moderator" />
-            <marker date="1523559473086" expanded="true" signature="1326:1399" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="454:577" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:876" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:910" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:911" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:933" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:934" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:958" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="835:959" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1322" ph="SELECT UserI... User" />
+            <marker date="1524015277922" expanded="true" signature="1315:1368" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1369" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1371" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1387" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1315:1388" ph="SELECT Moder... Moderator" />
+            <marker date="1524015277922" expanded="true" signature="1822:1888" ph="SELECT Stude... Student" />
+            <marker date="1524015277922" expanded="true" signature="2312:2359" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2312:2375" ph="SELECT Selle... Seller" />
+            <marker date="1524015277922" expanded="true" signature="2763:2868" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2871" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2910" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2947" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2948" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2950" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2970" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="2763:2971" ph="SELECT ItemI... Item" />
+            <marker date="1524015277922" expanded="true" signature="3199:3248" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3199:3266" ph="SELECT fkSch... Student" />
+            <marker date="1524015277922" expanded="true" signature="3593:3642" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3644" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="3593:3662" ph="SELECT fkLoc... School" />
+            <marker date="1524015277922" expanded="true" signature="4065:4181" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4204" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4206" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4231" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4233" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4259" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4261" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4287" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4065:4288" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4695" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4715" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4634:4745" ph="INSERT INTO Seller... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5079" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5130" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="4987:5159" ph="INSERT INTO School... " />
+            <marker date="1524015277922" expanded="true" signature="5454:5506" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5509" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5554" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5599" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5602" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5649" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5650" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5652" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5677" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="5454:5678" ph="SELECT Locat... Location" />
+            <marker date="1524015277922" expanded="true" signature="6130:6491" ph="SELECT ItemI... ITEM" />
+            <marker date="1524015277922" expanded="true" signature="6939:6951" ph="INSERT INTO Location... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7090" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7136" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7178" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7205" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7259" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7278" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7285" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7286" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="6939:7288" ph="INSERT INTO Item... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7823" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7843" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7906" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7936" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="7718:7937" ph="INSERT INTO Computer... " />
+            <marker date="1524015277922" expanded="true" signature="8164:8291" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8717" ph="INSERT INTO Clothing... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8736" ph="INSERT INTO Book... " />
+            <marker date="1524015277922" expanded="true" signature="8551:8740" ph="INSERT INTO Clothing... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BuySell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="60" column="54" lean-forward="true" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+        <state relative-caret-position="335">
+          <caret line="251" column="13" lean-forward="true" selection-start-line="251" selection-start-column="13" selection-end-line="251" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
