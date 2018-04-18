@@ -2,11 +2,12 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class BuySell {
+        static int UserID = 0;
 
         public static void main(String args[]) throws SQLException {
             Connection con = connect();
-            int UserID = logIn(con);
-            dashboardMenu(UserID, con);
+            logIn(con);
+            mainMenu(UserID, con);
         }
         public static Connection connect(){
             Connection con = null;
@@ -19,74 +20,254 @@ public class BuySell {
             return con;
         }
 
-        public static int logIn(Connection con) throws SQLException {
+        public static void logIn(Connection con) throws SQLException {
+            UserID = 0;
             Scanner scan = new Scanner(System.in);
             System.out.println("Type 'l' to log in or 'r' to register: ");
-            String choice = scan.next();
+            String choice = scan.nextLine();
             if(choice.equals("l")) {
                 System.out.println("- LOG IN - ");
                 System.out.println("Please input your email address: ");
-                String UserEmail = scan.next();
+                String UserEmail = scan.nextLine();
 
                 System.out.println("\nPlease input your password: ");
-                String UserPassword = scan.next();
+                String UserPassword = scan.nextLine();
 
-                int UserID = mysqlDataLayer.logIn(UserEmail, UserPassword, con);
+                UserID = mysqlDataLayer.logIn(UserEmail, UserPassword, con);
 
                 if (UserID == 0) {
                     System.out.println("*** ERROR: Login credentials invalid ***\n");
                     BuySell.logIn(con);
                 } else {
                     System.out.println("Login successful.");
-                    return UserID;
                 }
             }
+
             else if(choice.equals("r")){
                 System.out.println("- REGISTRATION - ");
                 System.out.println("Email Address: ");
                 String UserEmail = scan.next();
 
                 System.out.println("Password: ");
-                String UserPassword = scan.next();
+                String UserPassword = scan.nextLine();
 
                 System.out.println("Full Name: ");
-                String UserFullName = scan.next();
+                String UserFullName = scan.nextLine();
 
                 System.out.println("Display Name: ");
-                String UserDisplayName = scan.next();
+                String UserDisplayName = scan.nextLine();
 
                 System.out.println("Phone Number: ");
-                String UserPhoneNumber = scan.next();
+                String UserPhoneNumber = scan.nextLine();
 
                 System.out.println("Date of Birth: ");
-                String UserDateOfBirth = scan.next();
+                String UserDateOfBirth = scan.nextLine();
                 }
 
-           return 0;
+            else if (!choice.equals("l") || !choice.equals("r")){
+                System.out.println("Please enter either 'l' or 'r'");
+                logIn(con);
+            }
         }
 
-        public static void dashboardMenu(int UserID, Connection con) throws SQLException {
+        public static void mainMenu(int UserID, Connection con) throws SQLException {
             System.out.println("What would you like to do next? Press \"h\" for options.");
             Scanner scan = new Scanner(System.in);
-            String input = scan.next();
+            String input = scan.nextLine();
+
 
             if(input.equals("h")){
-                System.out.println("Type \'c -i\' to create new item");
-                System.out.println("Type \'c -l\' to create new location");
-                System.out.println("Type \'c -s\' to create new school");
-                System.out.println("Type \'v -p\' to view a user profile");
-                System.out.println("Type \'v -c\' to view a user's contact information");
-                System.out.println("Type \'v -i\' to view item");
-                System.out.println("Type \'s -i\' to search for items");
-                System.out.println("Type \'r -u\' to rate a user");
+                System.out.println("Type \'ci\' to create new item");
+                System.out.println("Type \'cl\' to create new location");
+                System.out.println("Type \'cs\' to create new school");
+                System.out.println("Type \'vp\' to view a user profile");
+                System.out.println("Type \'vc\' to view a user's contact information");
+                System.out.println("Type \'vi\' to view item");
+                System.out.println("Type \'si\' to search for items");
+                System.out.println("Type \'ru\' to rate a user");
 
                 if (mysqlDataLayer.testModerator(UserID, con)){
                     System.out.println("Type \'m\' to use moderator modification");
                 }
-
+            input = scan.next();
             }
-            else System.out.println("error");
+            if (input.equals("ci")) {
+                createItem(UserID, con);
+            }
+
+            if (input.equals("cl")) {
+                createLocation(con);
+            }
+            if (input.equals("cs")){
+                createSchool(con);
+            }
+            if (input.equals("si")){
+                searchItem(UserID, con);
+            }
         }
 
-    }
+        public static void searchItem (int UserID, Connection con) throws SQLException {
+            int locationID = 0;
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Please input Item name: ");
+            String itemName = scan.nextLine();
 
+            System.out.println("Please input Item maximum price (as a decimal): ");
+            String itemPrice = scan.nextLine();
+
+            if (mysqlDataLayer.testStudent(UserID, con)){
+                System.out.println("The system has detected that you are a student. Do you want to search for Items at your school? \'y\' or \'n\'");
+                String input = scan.nextLine();
+                if(input.equals("y")){
+                    int schoolID = mysqlDataLayer.getSchoolID(UserID, con);
+                    locationID = mysqlDataLayer.getSchoolLocationID(schoolID, con);
+                }
+                else if(input.equals("n")){
+                    locationID = createLocation(con);
+                }
+                else{
+                    locationID = createLocation(con);
+                }
+            }
+            ResultSet si = mysqlDataLayer.searchItem(itemName, itemPrice, locationID, con);
+
+            while (si.next()){
+                int resultItemID = si.getInt(1);
+                String resultItemName = si.getString(2);
+                String resultitemPrice = si.getString(3);
+                String resultItemCondition = si.getString(4);
+                String resultItemDatePosted = si.getString(5);
+
+                System.out.println("Item ID: " + resultItemID + ", Name: " + resultItemName + ", Price: " + resultitemPrice + ", Condition: " + resultItemCondition + ", Date Posted: " + resultItemDatePosted);
+            }
+        }
+
+        public static void createItem(int UserID, Connection con) throws SQLException {
+            if (!mysqlDataLayer.testSeller(UserID, con)){
+                System.out.println("Uh oh, you're not listed as a Seller yet. The system will now make you a Seller.");
+                mysqlDataLayer.createSeller(UserID, 0, con);
+                System.out.println("Congratulations, you're now listed as a seller.");
+            }
+            int itemID = 0;
+            String date = String.valueOf(java.time.LocalDate.now());
+            int locationID = 0;
+            System.out.println("Please input Item Name: ");
+            Scanner scan = new Scanner(System.in);
+            String itemName = scan.nextLine();
+
+            System.out.println("Please input Item Price (as a decimal): ");
+            String itemPrice = scan.nextLine();
+
+            System.out.println("Please input Item Condition: ");
+            String itemCondition = scan.nextLine();
+
+            System.out.println("Please input Item Brand: ");
+            String itemBrand = scan.nextLine();
+
+            System.out.println("Please input Item description: ");
+            String itemDescription = scan.nextLine();
+
+            if (mysqlDataLayer.testStudent(UserID, con)){
+                System.out.println("The system has detected that you are a student. Do you want to set the Item's location to your school? \'y\' or \'n\'");
+                String input = scan.nextLine();
+                switch (input) {
+                    case "y":
+                        int schoolID = mysqlDataLayer.getSchoolID(UserID, con);
+                        locationID = mysqlDataLayer.getSchoolLocationID(schoolID, con);
+                        break;
+                    case "n":
+                        locationID = createLocation(con);
+                        break;
+                    default:
+                        locationID = createLocation(con);
+                        break;
+                }
+                itemID = mysqlDataLayer.createItem(UserID, locationID, itemName, itemPrice, itemCondition, date, itemBrand, itemDescription, con);
+            }
+            System.out.println("Is item a computer \'c\', book \'b\', clothing \'l\', or other \'o\'?");
+            String input = scan.nextLine();
+
+            switch (input) {
+                case "c":
+                    System.out.println("Please input the Computer's generation: ");
+                    String computerGeneration = scan.nextLine();
+
+                    System.out.println("Please input the Computer's processor: ");
+                    String computerProcessor = scan.nextLine();
+
+                    System.out.println("Please input the Computer's storage space: ");
+                    String computerStorageSpace = scan.nextLine();
+
+                    mysqlDataLayer.createComputer(itemID, computerGeneration, computerProcessor, computerStorageSpace, con);
+
+                    break;
+                case "b":
+                    System.out.println("Please input the Book's author: ");
+                    String bookAuthor = scan.nextLine();
+
+                    System.out.println("Please input the Book's edition: ");
+                    String bookEdition = scan.nextLine();
+
+                    mysqlDataLayer.createBook(itemID, bookAuthor, bookEdition, con);
+                    break;
+                case "l":
+                    System.out.println("Please input Clothing gender 'm' or 'f': ");
+                    String clothingGender = scan.nextLine();
+
+                    System.out.println("Please input Clothing's size: ");
+                    String clothingSize = scan.nextLine();
+
+                    System.out.println("Please input Clothing's color: ");
+                    String clothingColor = scan.nextLine();
+
+                    mysqlDataLayer.createClothing(itemID, clothingGender, clothingColor, clothingSize, con);
+                    break;
+                default:
+                    mainMenu(UserID, con);
+                    break;
+            }
+        }
+
+        public static int createLocation(Connection con) throws SQLException {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Please enter a Location City: ");
+            String locationCity = scan.next();
+
+            System.out.println("Please enter a Location State (2-digit abbreviation): ");
+            String locationState = scan.next();
+
+            System.out.println("Please enter a Location Zip Code: ");
+            String locationZipCode = scan.next();
+
+            System.out.println("Please enter a Location Address: ");
+            String locationAddress = scan.next();
+
+            int testID = (mysqlDataLayer.getLocationID(locationCity, locationState, locationZipCode, locationAddress, con));
+            if (testID == 0){
+                mysqlDataLayer.createLocation(locationCity, locationState, locationZipCode, locationAddress, con);
+                int locationID = mysqlDataLayer.getLocationID(locationCity, locationState, locationZipCode, locationAddress, con);
+                System.out.println("Location created successfully.");
+                System.out.println(locationID);
+                return locationID;
+            }
+            else {
+                System.out.println(testID);
+                System.out.println("Location already exists.");
+                return testID;
+            }
+
+        }
+
+        public static void createSchool(Connection con) throws SQLException {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Please input School's name: ");
+            String schoolName = scan.nextLine();
+
+            System.out.println("Please input School's abbreviation: ");
+            String schoolAbbreviation = scan.nextLine();
+
+            int locationID = createLocation(con);
+
+            mysqlDataLayer.createSchool(locationID, schoolName,schoolAbbreviation,con);
+        }
+}
