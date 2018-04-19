@@ -16,7 +16,6 @@ public class BuySell {
                 Class.forName("com.mysql.jdbc.Driver");
                 //here BuySell is database name, root is username, and password is empty
                 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/BuySell", "root", "");
-                //con.close();
             } catch (Exception e) {System.out.println(e);}
             return con;
         }
@@ -98,7 +97,9 @@ public class BuySell {
                 System.out.println("Type \'cl\' to create new location");
                 System.out.println("Type \'cs\' to create new school");
                 System.out.println("Type \'di\' to delete an item");
-                System.out.println("Type \'bs\' to become a student");
+                if (!mysqlDataLayer.testStudent(UserID,con)) {
+                    System.out.println("Type \'bs\' to become a student");
+                }
                 System.out.println("Type \'si\' to search for items");
                 System.out.println("Type \'vu\' to view a user profile");
                 if(mysqlDataLayer.testSeller(UserID,con)){
