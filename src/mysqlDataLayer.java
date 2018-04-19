@@ -390,7 +390,5 @@ public class mysqlDataLayer {
         int executeUpdate1 = di.executeUpdate("DELETE FROM Book Where BookID = " + ItemID + ";");
         int executeUpdate2 = di.executeUpdate("DELETE FROM Clothing Where ClothingID = " + ItemID + ";");
         int executeUpdate3 = di.executeUpdate("DELETE FROM Item Where ItemID = " + ItemID + ";");
-
-
     }
 }

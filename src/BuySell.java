@@ -113,7 +113,7 @@ public class BuySell {
                     System.out.println("Type \'mm\' to use moderator modification");
                     System.out.println("Type \'mp\' to give a user moderator privileges");
                 }
-                System.out.println("Type \'lo\' to rate a user");
+                System.out.println("Type \'lo\' to log out");
 
             input = scan.next();
             }
