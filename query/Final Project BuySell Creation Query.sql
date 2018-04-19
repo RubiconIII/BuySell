@@ -10,7 +10,7 @@ CREATE TABLE
     LocationCity varchar(30) NOT NULL,
     LocationState varchar(2) NOT NULL,
     LocationZipcode varchar(5),
-    LocationAddress varchar(50) UNIQUE
+    LocationAddress varchar(50)
     );
 
 -- Create School Table
@@ -23,7 +23,6 @@ CREATE TABLE
     SchoolAbbreviation varchar(10),
     CONSTRAINT fkLocationID_FK FOREIGN KEY (fkLocationID) REFERENCES Location(LocationID)
     );
-    
     
 -- Create User Table
 CREATE TABLE 
@@ -86,8 +85,7 @@ CREATE TABLE
 	Moderator 
     (
     ModeratorID int NOT NULL PRIMARY KEY,
-    ModeratorPrivilege varchar (50) NOT NULL,
-     CONSTRAINT ModeratorID_FK FOREIGN KEY (ModeratorID) REFERENCES User(UserID)
+	CONSTRAINT ModeratorID_FK FOREIGN KEY (ModeratorID) REFERENCES User(UserID)
     );
     
 -- Create Student Table
